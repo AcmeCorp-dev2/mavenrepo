@@ -53,4 +53,5 @@ jobs:
           -e GITHUB_RUN_ID="${{github.run_id}}" \
           -e WORKSPACE_PATH="/src" \
           -e ONLY_LATEST="True" \
+          -e LOGLEVEL = "debug" \
           -v "${{ github.workspace }}":/src  "${{env.docker_tag}}"
